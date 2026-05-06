@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# Fraud Detection Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Dashboard Demo](<Dashboard Demo.png>)
 
-## Available Scripts
+Real-time fraud detection dashboard powered by machine learning.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- 🔒 Real-time fraud detection
+- 📊 Visual risk score indicators
+- ⚡ <5ms ML inference latency
+- 🎨 Clean, intuitive interface
+- 📱 Responsive design
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tech Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Frontend:** React 18 + TypeScript
+- **Styling:** CSS3
+- **API:** Fetch API
+- **ML Backend:** FastAPI with Isolation Forest
 
-### `npm test`
+## Quick Start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+# Install dependencies
+npm install
 
-### `npm run build`
+# Start development server
+npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Open browser
+open http://localhost:3000
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js 18+
+- ML Service running on port 8000
 
-### `npm run eject`
+## Integration
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This dashboard connects to:
+- [loan-ai-service](https://github.com/JayshreeVaswani1/loan-ai-service) - ML fraud detection API
+- [loan-origination-system](https://github.com/JayshreeVaswani1/loan-origination-system) - Main backend (future)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How It Works
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. User enters transaction details
+2. Frontend calls ML service
+3. Model analyzes transaction (95% accuracy)
+4. Dashboard displays:
+   - ✅ APPROVE (low risk)
+   - ⚠️ REVIEW (medium risk)
+   - 🚫 BLOCK (high risk)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Development
 
-## Learn More
+Built as part of a complete fraud detection platform.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Author:** Jayshree Vaswani  
+**LinkedIn:** [linkedin.com/in/jayshree-vaswani-854081102](https://www.linkedin.com/in/jayshree-vaswani-854081102/)
